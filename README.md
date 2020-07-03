@@ -5,17 +5,16 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+# 新部署项目第一步   安装npm
+cnpm install
 
-# serve with hot reload at localhost:8080
+# 以开发模式运行
 npm run dev
 
-# build for production with minification
+# 构建项目
 npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

@@ -3,21 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
-//引入IVIEW组件
-import iView from 'iview';
+import iView from 'iview'; //引入IVIEW组件
 import 'iview/dist/styles/iview.css';
-Vue.use(iView);
-//引入vue-easytable
-import 'vue-easytable/libs/themes-base/index.css'
+import 'vue-easytable/libs/themes-base/index.css'//引入vue-easytable
+import axios from 'axios' //引入axios
 import {VTable,VPagination} from 'vue-easytable'
-Vue.component(VTable.name, VTable)
-Vue.component(VPagination.name, VPagination)
-//引入axios
-import axios from 'axios'
-Vue.prototype.$ajax = axios
 
 Vue.config.productionTip = false
+Vue.use(iView);
+Vue.component(VTable.name, VTable)
+Vue.component(VPagination.name, VPagination)
+Vue.prototype.$ajax = axios
 
 /* eslint-disable no-new */
 new Vue({
