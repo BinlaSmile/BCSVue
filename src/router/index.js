@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import back from '@/router/back';
 import front from '@/router/front';
 import frontIndex from "@/views/front/index";
+import backIndex from "@/views/back/index";
 
 
 Vue.use(VueRouter);
@@ -13,8 +14,8 @@ const routes = [
 
   {
     path: "/",
-    name: "frontIndex",
-    component: frontIndex
+    name: "backIndex",
+    component: backIndex
   }
 ];
 

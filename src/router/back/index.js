@@ -1,7 +1,7 @@
 import Layout from '@/views/back/index';
-
-// import honeycomb from '@/views/back/honeycomb' // 测试用
+import projectManage from '@/router/back/projectManage' // 项目管理
 export default [
+    ...projectManage,
 
     {
         path: '/back/index',
@@ -11,7 +11,7 @@ export default [
         children: [
             {
                 path: '',
-                component: () => import('@/views/back/index')
+                component: () => import('@/pages/back/main')
             }
         ]
     }
