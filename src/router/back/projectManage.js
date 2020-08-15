@@ -20,8 +20,8 @@ export default [
     },
 
     {
-        path: '/back/projectManage/111',
-        name: 'projectManage111',
+        path: '/back/projectManage/projectList',
+        name: 'projectList',
         meta: {
             requireAuth: true
         },
@@ -29,13 +29,13 @@ export default [
         children: [{
             path: '',
             component: () =>
-                import('@/pages/back/projectManage/111')
+                import('@/pages/back/projectManage/projectList')
         }],
     },
 
     {
-        path: '/back/projectManage/222',
-        name: 'projectManage222',
+        path: '/back/projectManage/additionalItems',
+        name: 'additionalItems',
         meta: {
             requireAuth: true
         },
@@ -43,7 +43,7 @@ export default [
         children: [{
             path: '',
             component: () =>
-                import('@/pages/back/projectManage/222')
+                import('@/pages/back/projectManage/additionalItems')
         }],
     },
 

@@ -2,7 +2,7 @@
   <div ref="leftBlock" class="left-block">
     <el-menu
       :default-active="$route.path"
-      class="el-menu-vertical-demo"
+      class="el-menu-vertical"
       @open="handleOpen"
       @close="handleClose"
       :collapse="isCollapse"
@@ -14,18 +14,36 @@
       @select="handleSelect"
     >
       <el-menu-item index="/back/index">
-        <i class="iconfont iconhome"></i>
+        <i class="iconfont iconyysc"></i>
         <span slot="title">首页</span>
       </el-menu-item>
       <el-submenu index="/back/projectManage">
         <template slot="title">
           <router-link to="/back/projectManage">
-            <i class="iconfont icondata_assets"></i>
+            <i class="iconfont iconlcgl"></i>
             <span>项目管理</span>
           </router-link>
         </template>
-        <el-menu-item index="/back/projectManage/111">项目管理1</el-menu-item>
-        <el-menu-item index="/back/projectManage/222">项目管理2</el-menu-item>
+        <el-menu-item index="/back/projectManage/projectList">项目</el-menu-item>
+        <el-menu-item index="/back/projectManage/additionalItems">附加项</el-menu-item>
+      </el-submenu>
+      <el-submenu index="/back/itemManage">
+        <template slot="title">
+          <router-link to="/back/itemManage">
+            <i class="iconfont iconhomepage_menu_09"></i>
+            <span>库存管理</span>
+          </router-link>
+        </template>
+        <el-menu-item index="/back/itemManage/itemList">库存</el-menu-item>
+      </el-submenu>
+          <el-submenu index="/back/userManage">
+          <template slot="title">
+          <router-link to="/back/userManage">
+            <i class="iconfont iconhomepage_menu_04"></i>
+            <span>用户管理</span>
+          </router-link>
+          </template>
+        <el-menu-item index="/back/userManage/userList">用户</el-menu-item>
       </el-submenu>
     </el-menu>
   </div>
@@ -76,9 +94,10 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-.el-menu-vertical-demo:not(.el-menu--collapse) {
+.el-menu-vertical:not(.el-menu--collapse) {
   width: 240px;
-  min-height: 400px;
+  height:100%;
+  min-height:400px;
 }
 
 .left-block {
