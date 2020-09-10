@@ -43,4 +43,7 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+.el-main {
+  background-color: #bcbcbc;
+}
 </style>
