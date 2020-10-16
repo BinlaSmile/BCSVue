@@ -42,8 +42,15 @@ export default {
   mounted() {}
 };
 </script>
+<style lang="less">
+.el-container {
+  min-height: 100vh;
+}
+
+</style>
 <style lang="less" scoped>
 .el-main {
-  background-color: #bcbcbc;
+  background-color: #ebeef5;
+    padding: 0;
 }
 </style>

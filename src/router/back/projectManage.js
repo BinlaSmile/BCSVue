@@ -47,5 +47,32 @@ export default [
         }],
     },
 
+    {
+        path: '/back/projectManage/projectDetail',
+        name: 'projectDetail',
+        meta: {
+            requireAuth: true
+        },
+        component: Layout,
+        children: [{
+            path: '',
+            component: () =>
+                import('@/pages/back/projectManage/projectDetail')
+        }],
+    },
 
+    {
+        path: '/back/projectManage/projectEdit',
+        name: 'projectEdit',
+        meta: {
+            requireAuth: true
+        },
+        component: Layout,
+        children: [{
+            path: '',
+            component: () =>
+                import('@/pages/back/projectManage/projectEdit')
+        }],
+    },
+    
 ]

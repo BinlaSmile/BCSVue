@@ -10,12 +10,15 @@ import store from "./store";
 import axios from './http'
 import apis from './apis'
 import './config/vee-validate.js'
+import tools from './lib/tools'
 
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios
 Vue.prototype.$apis = apis
 Vue.prototype.$echarts = echarts
 Vue.prototype.$border = true // 表格是否显示
+Vue.prototype.tools = tools;
+
 Vue.use(ElementUI);
 Object.defineProperties(Vue.prototype, {
   echarts: {

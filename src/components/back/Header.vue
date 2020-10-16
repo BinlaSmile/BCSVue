@@ -2,12 +2,12 @@
   <div class="top-block">
     <div class="account">
       <div class="fl website-title">
-        <a href="javascript:;" class="pack-up" @click="handlePickup" v-show="!isCollapse">
-          <i class="iconfont iconfold" v-show="!isCollapse"></i>
-        </a>
-        <a href="javascript:;" class="an" @click="handleAn" v-show="isCollapse">
-          <i class="iconfont iconfold" v-show="isCollapse"></i>
-        </a>
+        <span class="pack-up" @click="handlePickup" v-show="!isCollapse">
+          <i class="iconfont icon-toggle-left" v-show="!isCollapse"></i>
+        </span>
+        <span class="an" @click="handleAn" v-show="isCollapse">
+          <i class="iconfont icon-toggle-right" v-show="isCollapse"></i>
+        </span>
         <span>本拉管理中心</span>
       </div>
     </div>

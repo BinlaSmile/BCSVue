@@ -25,6 +25,7 @@
           </router-link>
         </template>
         <el-menu-item index="/back/projectManage/projectList">项目</el-menu-item>
+        <el-menu-item index="/back/projectManage/projectDetail">项目详情</el-menu-item>
         <el-menu-item index="/back/projectManage/additionalItems">附加项</el-menu-item>
       </el-submenu>
       <el-submenu index="/back/itemManage">
