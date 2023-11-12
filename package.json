@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "-": "0.0.1",
-    "axios": "^0.21.1",
+    "axios": "^1.6.0",
     "core-js": "^3.6.5",
     "echarts": "^4.8.0",
     "element-ui": "^2.13.2",
